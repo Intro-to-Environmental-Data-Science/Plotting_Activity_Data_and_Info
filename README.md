@@ -1,10 +1,10 @@
 # Pick a dataset and plot it
 
-Choose **one** dataset below, read it into R, and make a few plots to explore it. Each dataset has a metadata file (source, variables, units, quirks, ideas) in `metadata/`. Read it before you start.
+Choose **one** dataset below, read it into R, and make 3 plots to explore it. Each dataset has a metadata file (source, variables, units, quirks, ideas) in `metadata/`. Read it before you start.
 
 ## Loading a dataset
 
-```r
+``` r
 library(tidyverse)
 
 dat <- read_csv("data/penguins.csv")   # swap in your file name
@@ -15,8 +15,8 @@ If R can't find the file, check that you opened this repo as an RStudio project.
 
 ## The datasets
 
-| # | Dataset | File | Rows | Good for | Watch out for |
-|---|---|---|---|---|---|
+| \# | Dataset | File | Rows | Good for | Watch out for |
+|------------|------------|------------|------------|------------|------------|
 | 1 | [Atmospheric CO2, Mauna Loa](metadata/mauna_loa_co2.md) | `mauna_loa_co2.csv` | 822 | time series, seasonality | strong yearly cycle |
 | 2 | [Global temperature anomalies](metadata/global_temperature_anomaly.md) | `global_temperature_anomaly.csv` | 3,871 | color/facet by source, time series | two different baselines |
 | 3 | [Palmer penguins](metadata/penguins.md) | `penguins.csv` | 344 | scatter, boxplots, facets | a few `NA`s |
@@ -31,4 +31,4 @@ If R can't find the file, check that you opened this repo as an RStudio project.
 
 ## About these files
 
-Data come from public sources (NOAA, NASA, EPA, Smithsonian, Our World in Data, and others, mostly via GitHub mirrors). Where I changed anything (renamed columns, converted dates, dropped columns), it is listed under "Changes from source" in each metadata file. `prep/make_datasets.py` rebuilds every file from its source.
+Data come from public sources (NOAA, NASA, EPA, Smithsonian, Our World in Data, and others, mostly via GitHub mirrors).
